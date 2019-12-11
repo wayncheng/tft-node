@@ -1,0 +1,24 @@
+{
+	"name": "react-redux-node-clean",
+	"version": "0.1.0",
+	"description": "React Redux Node Express Clean Boilerplate",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js",
+		"start:hot": "nodemon server.js",
+		"client": "cd client && yarn start",
+		"server": "cd client && yarn build && cd .. && yarn start",
+		"initiate": "yarn install && touch .env && cd client && yarn install"
+	},
+	"author": "Wayne Cheng",
+	"license": "Apache-2.0",
+	"dependencies": {
+		"body-parser": "^1.18.3",
+		"dotenv": "^6.1.0",
+		"express": "^4.16.4"
+	},
+	"devDependencies": {
+		"chalk": "^3.0.0",
+		"nodemon": "^1.18.7"
+	}
+}

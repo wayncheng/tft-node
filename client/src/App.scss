@@ -1,0 +1,19 @@
+@import "./config/variables";
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	background-color: $bg-light;
+	font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
+body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+}
