@@ -1,0 +1,22 @@
+.item {
+	$icon-size: 3rem;
+	margin: .25rem;
+	display: flex;
+	background-color: red;
+	max-height: $icon-size;
+	max-width: $icon-size;
+	img {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.items-container{
+	display: flex;
+	flex-direction: row;
+}
+.item-select-panel{
+	display: flex;
+	flex-direction: row;
+	background-color: #fff;
+}
