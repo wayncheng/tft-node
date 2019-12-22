@@ -4,8 +4,8 @@ import {connect} from 'react-redux';
 import {Helmet} from 'react-helmet';
 import KeyboardEventHandler from 'react-keyboard-event-handler';
 import {
-	// Item, 
-	Inventory, 
+	// Item,
+	Inventory,
 	Combos,
 	BaseItemSelectionPanel,
 } from '../components';
@@ -45,29 +45,13 @@ class HomePage extends Component {
 		return (
 			<div className='page-root flex flex-col	justify-between'>
 				<Helmet title='Home' />
-
-				<section className='big-img-container flex-1 m-auto '>
-					{/* <img src="https://progameguides.com/wp-content/uploads/2019/06/tft-full-item-cheat-sheet-desktop-set2-9-23.png" alt="cheat sheet"/> */}
-					{/* <img className="w-full" src="https://progameguides.com/wp-content/uploads/2019/06/tft-full-item-cheat-sheet-extra-set2-9-24-1.png" alt="cheat sheet"/> */}
+				<section className='big-img-container flex-1 m-auto bg-gray-500'>
 					<img className='w-full' src={itemTable} alt='item cheat sheet' />
 				</section>
 				<main className='flex-1 flex flex-col justify-stretch'>
-					<Combos />
-					<Inventory />
-					<BaseItemSelectionPanel/>
-					{/* <p>combos: {this.props.combos.length}</p>
-				{this.props.combos.length > 0 && (
-					<div>
-						{this.props.combos.map((combo, index) => {
-							const item1 = combo[0];
-							const item2 = combo[1];
-							// const comboItem = itemData[item1].combos[item2];
-							const comboItem = combo.join('_');
-							// console.log('comboItem:', comboItem);
-							return <Item item_id={comboItem} partner={item2} action='none' key={'combo-' + index} />;
-						})}
-					</div>
-				)} */}
+					<Combos className='bg-gray-400' />
+					<Inventory className='bg-gray-300' />
+					<BaseItemSelectionPanel className='bg-gray-100' />
 				</main>
 
 				<KeyboardEventHandler

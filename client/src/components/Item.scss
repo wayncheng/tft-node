@@ -34,12 +34,13 @@
 .items-container {
 	display: flex;
 	flex-direction: row;
+	align-items: stretch;
 	font-size: 2rem;
 }
 .base-select-panel {
 	display: flex;
 	flex-direction: row;
-	background-color: #fff;
+	// background-color: #fff;
 	max-height: 8rem;
 	padding: 1rem 1rem 1rem 2rem;
 	.container {
@@ -68,7 +69,7 @@
 .inventory {
 	display: flex;
 	flex-direction: row;
-	background-color: $bg-light;
+	// background-color: $bg-light;
 	flex-wrap: wrap;
 	// padding: 2rem 2rem;
 }
@@ -88,5 +89,6 @@
 		text-transform: uppercase;
 		line-height: 1.25;
 		text-align: center;
+		color: $fg-secondary;
 	}
 }

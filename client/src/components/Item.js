@@ -22,7 +22,7 @@ class Item extends Component {
 	}
 
 	render() {
-		const {item_id,partner} = this.props;
+		const {item_id} = this.props;
 		const item = itemData[item_id];
 		// const full_id = partner ? item.combos[partner] : item.id;
 		return (

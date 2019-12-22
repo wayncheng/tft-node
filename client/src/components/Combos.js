@@ -1,9 +1,13 @@
 import React, {Component} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
+import classNames from 'classnames';
 // import itemData from '../utils/item_data';
 import './Combos.scss';
-import {Item, ComboItem} from '../components';
+import {
+	// Item, 
+	ComboItem,
+} from '../components';
 
 class Combos extends Component {
 	constructor(props) {
@@ -12,10 +16,13 @@ class Combos extends Component {
 	}
 
 	render() {
-		const {combos, unique} = this.props;
+		const {
+			// combos, 
+			unique,
+		} = this.props;
 		// console.log('combos:',combos);
 		return (
-				<section className="combos items-row">
+				<section className={classNames("combos items-row", this.props.className)}>
 					{unique.length > 0 && (
 						<div className='items-container flex-row justify-center m-auto'>
 							{unique.map((pair, index) => {

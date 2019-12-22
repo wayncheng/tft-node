@@ -3,7 +3,11 @@
 	"version": "0.1.0",
 	"description": "React Redux Node Express Clean Boilerplate",
 	"main": "server.js",
+	"homepage": "https://wayncheng.github.io/tft-node",
 	"scripts": {
+
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"start": "node server.js",
 		"start:hot": "nodemon server.js",
 		"client": "cd client && yarn start",
@@ -20,6 +24,7 @@
 	},
 	"devDependencies": {
 		"chalk": "^3.0.0",
+		"gh-pages": "^2.1.1",
 		"nodemon": "^1.18.7"
 	}
 }

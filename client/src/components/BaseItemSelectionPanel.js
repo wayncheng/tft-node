@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {Item} from '.';
-
+import classNames from 'classnames';
 class BaseItemSelectionPanel extends Component {
 	constructor(props) {
 		super(props);
@@ -12,7 +12,7 @@ class BaseItemSelectionPanel extends Component {
 	render() {
 		return (
 			
-			<section className='base-select-panel items-row items-container'>
+			<section className={classNames('base-select-panel items-row items-container', this.props.className)}>
 				<div className="container mx-auto max-w-3xl flex flex-row justify-center align-center">
 
 			{this.props.base.map((baseItem, index) => {

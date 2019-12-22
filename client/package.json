@@ -2,8 +2,10 @@
 	"name": "react-redux-app-bones",
 	"version": "0.1.0",
 	"private": true,
+	"homepage": "https://wayncheng.github.io/tft-node",
 	"dependencies": {
 		"classnames": "^2.2.6",
+		"gh-pages": "^2.1.1",
 		"history": "^4.7.2",
 		"node-sass": "^4.11.0",
 		"prop-types": "^15.7.2",
