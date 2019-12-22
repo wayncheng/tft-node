@@ -1,22 +1,92 @@
+@import '../config/variables';
+
+
 .item {
-	$icon-size: 3rem;
-	margin: .25rem;
+	$icon-size: 4rem;
+	font-size: 4rem;
+	margin: 0;
+	flex: 1;
+	// margin-right: 0.25rem;
+	// &:last-child {
+	// 	margin-right: 0;
+	// }
 	display: flex;
-	background-color: red;
-	max-height: $icon-size;
-	max-width: $icon-size;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	// max-height: 1em;
+	max-width : 1em;
+	margin: 0 .5rem;
+	
+
 	img {
-		height: 100%;
-		width: 100%;
+		height    : 100%;
+		width     : 100%;
+		font-size: inherit;
+		max-height: 1em;
+		max-width : 1em;
+		// max-height: $icon-size;
+		// max-width: $icon-size;
+		margin: auto;
 	}
 }
 
-.items-container{
+.items-container {
 	display: flex;
 	flex-direction: row;
+	font-size: 2rem;
 }
-.item-select-panel{
+.base-select-panel {
 	display: flex;
 	flex-direction: row;
 	background-color: #fff;
+	max-height: 8rem;
+	padding: 1rem 1rem 1rem 2rem;
+	.container {
+		// outline: 1px solid blue;
+	}
+	// .item {
+	// 	margin-right: 1rem;
+	// 	&:last-child {
+	// 		margin-right: 0;
+	// 	}
+	// }
+}
+.items-row {
+	width: 100%;
+	padding: 1rem;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	margin: 0 auto;
+}
+
+
+// Inventory ==============================
+.inventory {
+	display: flex;
+	flex-direction: row;
+	background-color: $bg-light;
+	flex-wrap: wrap;
+	// padding: 2rem 2rem;
+}
+
+// Combos ===================================
+.combos {
+	min-height: 2rem;
+	.items-container {
+		flex-wrap: wrap;
+	}
+	
+}
+.combo-item {
+	.help {
+		font-size: 0.8rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 1.25;
+		text-align: center;
+	}
 }
