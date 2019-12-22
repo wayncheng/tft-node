@@ -16,7 +16,8 @@ class Inventory extends Component {
 		const {inventory} = this.props;
 		// console.log('inventory --->',inventory);
 		return (
-			<section className='inventory'>
+			<section className='inventory items-row justify-center'>
+				{/* <div className="container m-auto"></div> */}
 				{inventory.map((item_id, index) => {
 					return (
 						<Item 

@@ -8,12 +8,49 @@ html {
 	font-size: 16px;
 	background-color: #fff;
 	font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	min-height: 100vh;
+
 }
 
 
 body {
 	margin: 0;
+	min-height: inherit;
 	height: 100%;
 	width: 100%;
 	overflow: auto;
+}
+
+#root {
+	min-height: inherit;
+	height: 100%;
+}
+
+.page-root {
+	min-height: inherit;
+	height: 100%;
+}
+.big-img-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	// max-width: 2000px;
+	width: 100%;
+	height: initial;
+	max-height: 60vh;
+	img {
+		max-height: inherit;
+		// max-height: 90vh;
+		height: 100%;
+		// height: inherit;
+		// height: initial;
+		// width: 100%;
+		width: initial;
+	}
+}
+
+.flex-kids { 
+	> * {
+		flex: 1;
+	}
 }
